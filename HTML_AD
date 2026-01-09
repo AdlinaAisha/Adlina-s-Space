@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #F5F0F0;
+  line-height: 1.8;
+  background: #b84476; /*pink*/
+background: radial-gradient(circle, rgba(184, 68, 118, 1) 0%, rgba(148, 187, 233, 1) 100%); /*guna css gradient.io*/
+
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url(lily.JPG);
+  min-height: 100%;
+
+}
+
+.w3-wide {letter-spacing: 9px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container" id="home">
+  <div class="w3-display-middle w3-center">
+    
+    <div class="logo-box">
+        <h2 class="w3-xxxlarge w3-wide" style="margin:0; color: white;">
+            <span class="w3-hide-small">ADLINA'S</span> SPACE
+        </h2>
+        <p style="letter-spacing: 5px; font-size: 10px; margin-top: 10px; color: white;">
+          DIGITAL GARDEN
+        </p>
+    </div>
+    
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <p></p>
+  <p></p>
+  <p> <p style= "text-align: justify;">Welcome to my little corner of the internet! I’m so happy you’re here. This space is a collection of my favorite moments, academic journey, and the simple things that bring me joy. Whether you're a friend or just passing through, I hope you enjoy exploring my digital garden!
+
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <img src="adl.JPG" class="w3-round w3-image w3-hover-opacity-off" alt="Photo of Me" width="400" height="222">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+
+      <p> <P style= "text-align:justify;"> Olá. My name is Adlina Aisha, but feel free to call me whatever you love. A 21-year-old soul born in February 2005. I rarely going out or socialize simply because im an Infp. Recently i've found good movies to watch, called Lovesick— it's sad ending by the way. A story where one of them died and the other one simply hate talking about future realising they need to live just because the other person want to. Fun fact, I love cat and used to have more than 5 cats but i have allergy to them too. Propaganda I am falling for is, I am walking on every prayer that I utter every time I pray. 
+
+        <div class="w3-container w3-margin-bottom">
+      <h3 class="w3-wide">Education</h3>
+      <ul class="w3-ul w3-card-4 w3-white w3-round-large">
+        <li class="w3-padding-16">
+          <i class="fa fa-graduation-cap w3-margin-right w3-text-teal"></i>
+          <b>UiTM REMBAU</b><br>Diploma in Information Management (2023-2026)
+        </li>
+        <li class="w3-padding-16">
+          <i class="fa fa-book w3-margin-right w3-text-teal"></i>
+          <b>High School</b><br>SMK Tunku Besar Burhanuddin
+        </li>
+      </ul>
+    </div>
+    </div>
+
+<div class="w3-row-padding w3-padding-64 section-cream">
+  <div class="w3-content" style="max-width:1100px">
+
+    <div class="w3-col l6 m6 w3-container">
+      <h3 class="w3-wide w3-center">Semester Countdown</h3>
+      <div class="w3-card-4 w3-white w3-round-large w3-padding-32 w3-center">
+        <i class="fa fa-graduation-cap w3-text-pink w3-xxlarge"></i>
+        <p class="w3-large"><b>Academic Progress</b></p>
+        
+        <div class="w3-light-grey w3-round-xlarge w3-margin" style="height:20px">
+          <div class="w3-container w3-round-xlarge w3-blue" style="width:85%; height:20px"></div>
+        </div>
+        <p class="w3-opacity"><i>85% through the semester</i></p>
+
+        <hr style="width:50%; margin:auto" class="w3-opacity">
+        
+        <div class="w3-row w3-padding-16">
+          <div class="w3-half">
+            <p class="w3-small"><b>Current Focus:</b><br>Grouping Assignment</p>
+          </div>
+          <div class="w3-half">
+            <p class="w3-small"><b>Next Goal:</b><br>Final test and exam</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-col l6 m6 w3-container">
+      <h3 class="w3-wide w3-center">CheckList</h3>
+      
+      <ul class="w3-ul w3-card-4 w3-white w3-round-large w3-striped">
+        <li class="w3-padding-16">
+          <input type="checkbox" class="w3-check w3-margin-right"> Change the bedsheet every week 
+        </li>
+        <li class="w3-padding-16">
+          <input type="checkbox" class="w3-check w3-margin-right"> Less junk food, more real food
+        </li>
+        <li class="w3-padding-16">
+          <input type="checkbox" class="w3-check w3-margin-right"> Read atleast 1 page of Quran
+        </li>
+        <li class="w3-padding-16">
+          <input type="checkbox" class="w3-check w3-margin-right"> Time screen limit under 5 hours
+        </li>
+        <li class="w3-padding-16">
+          <input type="checkbox" class="w3-check w3-margin-right"> Do light workout 
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+<div class="w3-container w3-padding-10 w3-center">
+  <h3 class="w3-wide">Recommended Podcast Channel</h3> 
+
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col m12">
+        <img src="jay.PNG" 
+             style="width:100%; max-width:500px; border-radius: 20px;" 
+             class="w3-hover-opacity w3-card-4" 
+             alt="Jay Shetty Podcast">
+      </a>
+    </div>
+  </div>
+
+  <div class="w3-section">
+    <a href="https://youtube.com/@jayshettypodcast.?si=7DQx_ke1a7OTD6vA" 
+       target="_blank" 
+       class="w3-button w3-round-xxlarge w3-padding-large" 
+       style="background-color: #A8B8A9; color: white; letter-spacing: 2px; margin-top: 20px;">
+       WATCH ON YOUTUBE
+    </a>
+  </div>
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-full">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text- black w3-wide">PORTFOLIO</span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class=" style= width:100% w3-content w3-container w3-row-padding-10" id="portfolio">
+  <h3 class="w3-center">PHOTO DUMP</h3>
+  <p class="w3-center"><em>The little things that made me a bits of joy.<br></em></p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+      <img src="friend.jpg" style="width:99%" onclick="onClick(this)" class="w3-hover-opacity" alt="Diploma ride or die">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="foodie.jpg" style="width:99%" onclick="onClick(this)" class="w3-hover-opacity" alt="quick cafe run">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="bunga.jpg" style="width:104%" onclick="onClick(this)" class="w3-hover-opacity" alt="in bloom">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="kopi.jpg" style="width:99%" onclick="onClick(this)" class="w3-hover-opacity" alt="espresso over latte">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <img src="sekolah.jpg" style="width:97%" onclick="onClick(this)" class="w3-hover-opacity" alt="my favs<3">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="cat.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Lifesaver">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="tulips.jpg" style="width:101%" onclick="onClick(this)" class="w3-hover-opacity" alt="lilies and tulips">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="book.jpg" style="width:98%" onclick="onClick(this)" class="w3-hover-opacity" alt="coping mechanism">
+    </div>
+ 
+</div>
+
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-full">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center w3-wide">SAY HELLO !</h3>
+  <p class="w3-center"><i>short messages can turn strangers into friends too.</i></p>
+
+  <div class="w3-row w3-padding-32 w3-section" style="display: flex; align-items: center; flex-wrap: wrap;">
+    
+    <div class="w3-col m4 w3-container">
+      <img src="rusa.jpg" class="w3-image w3-round-large w3-card" style="width:100%" alt="contact-decoration">
+    </div>
+
+    <div class="w3-col m8 w3-container">
+      <div class="w3-medium w3-margin-bottom">
+        <p><i class="fa fa-paper-plane-o w3-margin-right"></i> <b>Email:</b> adlinaaishaa@gmail.com</p>
+        <p><i class="fa fa-instagram w3-margin-right"></i> <b>Instagram:</b> @d.adlna</p>
+      </div>
+
+      <div class="w3-card w3-round-large w3-light-grey w3-padding">
+        <p class="w3-small"><i>Drop a note in my digital jar.</i></p>
+        
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border w3-round" type="text" placeholder="Your Name" required name="Name">
+            </div>
+            <div class="w3-half">
+          </div>
+          <textarea class="w3-input w3-border w3-round" placeholder="Write your letter here..." required name="Message" style="height:100px; resize: none;"></textarea>
+          
+          <button class="w3-button w3-round-large w3-section w3-right" type="submit" style="background-color: #A8B8A9; color: white;">
+             SEND LETTER
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-30 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    </div>
+  <p>Powered by <a href="https://nsembilan.uitm.edu.my/rembau/" title="W3.CSS" target="_blank" class="w3-hover-text-green">RaO</a></p>
+</footer>
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "none";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
